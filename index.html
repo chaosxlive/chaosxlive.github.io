@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaosxlive</title>
+    <!-- ===CSS=== -->
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="row">
+            <!--
+                Side Nav
+            -->
+            <!-- Small -->
+            <div id="customized-side-nav-hide" class="navbar-dark bg-dark">
+                <div class="hide-nav-item">
+                    <a class="hide-nav-link" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+                </div>
+                <div class="hide-nav-item">
+                    <a class="hide-nav-link" href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="hide-nav-item">
+                    <a class="hide-nav-link" href="#links"><i class="fa fa-link" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <!-- Regular -->
+            <ul id="customized-side-nav" class="nav position-fixed flex-column px-5 py-1 h-100 navbar-dark bg-dark">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">To top</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#links">Links</a>
+                </li>
+            </ul>
+            <!--
+                Side Navbar End
+            -->
+            <div id="div-search" class="mx-auto col-8">
+                <form action="https://www.google.com/search" method="GET" class="my-2" id="search">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                        alt="googlelogo" class="col-2 p-2">
+                    <input type="text" name="q" id="search-google" class="col-6">
+                    <input type="submit" class="col-2" value="Search">
+                </form>
+
+                <div id="links" class="border rounded p-2">
+                    <table class="m-1 w-100">
+                        <thead style="display: none;">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <!-- Sample Here
+                            <tr class="text-light bg-primary">
+                                <td colspan="5" class="text-center">Media Pages</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="">
+                                            <img src="" alt="" height="50px;"></a>
+                                        <p></p>
+                                    </div>
+                                </td>
+                            </tr>    
+                            -->
+                            <!-- Favorite Pages -->
+                            <tr class="text-light bg-primary">
+                                <td colspan="5" class="text-center">Favorite Pages</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://www.youtube.com/">
+                                            <img src="https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc"
+                                                alt="Youtube" height="50px;"></a>
+                                        <p>Youtube</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://www.facebook.com/">
+                                            <img src="https://lh3.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg"
+                                                alt="Facebook" height="50px;"></a>
+                                        <p>Facebook</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- School Pages -->
+                            <tr class="text-light bg-primary">
+                                <td colspan="5" class="text-center">School Pages</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://lms.ncu.edu.tw/">
+                                            <img src="https://lms.ncu.edu.tw/img/d/favicon.png" alt="NCU-LMS"
+                                                height="50px;"></a>
+                                        <p>LMS</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://portal.ncu.edu.tw/">
+                                            <img src="https://portal.ncu.edu.tw/resources/images/NCU_logo_small.gif"
+                                                alt="NCU-Portal" height="50px;"></a>
+                                        <p>Portal</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://eeclass.ncu.edu.tw/">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Font_E.svg/1200px-Font_E.svg.png"
+                                                alt="EE-class" height="50px;"></a>
+                                        <p>EE-class</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Co-work Pages -->
+                            <tr class="text-light bg-primary">
+                                <td colspan="5" class="text-center">Co-work Pages</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://github.com/">
+                                            <img src="https://github.com/fluidicon.png" alt="Github" height="50px;"></a>
+                                        <p>Github</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://about.gitlab.com/">
+                                            <img src="https://about.gitlab.com/ico/favicon.ico" alt="Gitlab"
+                                                height="50px;"></a>
+                                        <p>Gitlab</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://hackmd.io/">
+                                            <img src="https://hackmd.io/favicon.png" alt="HackMD" height="50px;"></a>
+                                        <p>HackMD</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- Media Pages -->
+                            <tr class="text-light bg-primary">
+                                <td colspan="5" class="text-center">Media Pages</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://www.youtube.com/">
+                                            <img src="https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc"
+                                                alt="Youtube" height="50px;"></a>
+                                        <p>Youtube</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://www.bilibili.com/">
+                                            <img src="https://user-images.githubusercontent.com/9050713/39107515-619773e0-46f5-11e8-9fa9-2859816f1c42.png" alt="BiliBili" height="50px;"></a>
+                                        <p>BiliBili</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="https://ani.gamer.com.tw/">
+                                            <img src="https://ani.gamer.com.tw/apple-touch-icon-114.jpg" alt="AnimeGamer" height="50px;"></a>
+                                        <p>動畫瘋</p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="">
+                                            <img src="" alt="" height="50px;"></a>
+                                        <p></p>
+                                    </div>
+                                </td>
+                                <td class="p-2">
+                                    <div class="text-center">
+                                        <a href="">
+                                            <img src="" alt="" height="50px;"></a>
+                                        <p></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">Panel Body</div>
+                      <div class="panel-footer">Panel Footer</div>
+                    </div>
+                  </div> -->
+                <div style="height: 10000px;">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
