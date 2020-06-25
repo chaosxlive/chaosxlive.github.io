@@ -1,0 +1,23 @@
+.link-cell{
+    height: 100px;
+}
+
+.math-game{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://zh.puzzle-loop.com/art/games-sprite.png?v=4');
+    background-size: 1500px 50px;
+}
+
+.math-game-loop {
+    background-position: -942.5px 0px;
+}
+
+.math-game-tapa {
+    background-position: -1130px 0px;
+}
+
+.math-game-shaka {
+    background-position: -755px 0px;
+}
